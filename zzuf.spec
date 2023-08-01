@@ -2,13 +2,16 @@ Summary:	Multi-purpose fuzzer
 Summary(pl.UTF-8):	Narzędzie zniekształcające o wielu zastosowaniach
 Name:		zzuf
 Version:	0.13
-Release:	2
+Release:	3
 License:	WTFPL v2
 Group:		Development/Tools
 Source0:	http://caca.zoy.org/files/zzuf/%{name}-%{version}.tar.gz
 # Source0-md5:	74579c429f9691f641a14f408997d42d
 URL:		http://caca.zoy.org/wiki/zzuf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+# Filter GLIBC_PRIVATE Requires
+%define		_noautoreq	(GLIBC_PRIVATE)
 
 %description
 zzuf is a transparent application input fuzzer. It works by
