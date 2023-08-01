@@ -2,7 +2,7 @@ Summary:	Multi-purpose fuzzer
 Summary(pl.UTF-8):	Narzędzie zniekształcające o wielu zastosowaniach
 Name:		zzuf
 Version:	0.13
-Release:	1
+Release:	2
 License:	WTFPL v2
 Group:		Development/Tools
 Source0:	http://caca.zoy.org/files/zzuf/%{name}-%{version}.tar.gz
